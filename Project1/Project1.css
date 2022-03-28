@@ -5,13 +5,15 @@
     align-items: center;
     margin: auto;
     color: rgb(205, 235, 252);;
+    text-align: center;
 }
 
 .mainText {
-    color: rgb(86, 119, 138);
+    color: rgb(213, 235, 248);
     font-size: 20px;
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif
+    
   }
 
   .picfbc{
@@ -20,27 +22,85 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width:20em;
-    height:22em;
+    width:14em;
+    height:14em;
+    background:linear-gradient(90deg, Red, Orange, Green, Blue, Indigo,violet);
    
     }
 img{
-    height: 215px;
-    width: 215px;
+    height: 230px;
+    width: 230px;
 }
 
-.picdisplaygrid{
-  display: grid;
-  grid-template-columns: 207px 205px 235px;
- justify-content: center;
+.picdisplayflex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   
 }
 
 .picdisplay{
-  background-color: rgb(55, 116, 124);
-  padding:10px;
   font-size: 10px;
   text-align: center;
+  text-shadow: azure;
+  margin: 10px 10px 10px 10px;
  
+ }
+
+
+
+body {
+	background: linear-gradient(-45deg,  Red, Orange, Green, Blue, Indigo,violet);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.text {
+    
+  color: rgb(250, 248, 248);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  background:rgb(2, 90, 161)
   
 }
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: rgb(247, 204, 234);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(22, 68, 80);
+}
+
+
+
