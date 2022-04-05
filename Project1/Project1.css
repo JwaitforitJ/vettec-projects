@@ -96,7 +96,20 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(131, 5, 170);
+ opacity: 75%;
+}
+
+
+
+.buttonimg{
+  height: 40px;
+  width: 100px;
+  border-radius: 75px;
+ margin: 20px;
+}
+
+.buttonimg:hover{
+  opacity: 75%;
 }
 
 
