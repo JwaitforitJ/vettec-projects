@@ -4,59 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>J. Jennings' Journey</title>
     <link rel="stylesheet" href="Project1.css">
+    <link rel="stylesheet" href="Slideshow2.css">
+    
 </head>
-<body style="background-color:rgb(215, 245, 250); ">
-    <div class="fbc mainText">  <main><h1>My Journey</h1></main></div>
+<body >
+  <div class="fbc mainText">  <main><h1>Hello Again!</h1></main></div>
 
-    <div class="fbc mainText">
-        
-        
-        <ul class="fbc">
-            
-            <li><a class="active" href="./Landing.html"><Menu>Home</Menu></a></li>
-            <li><a href="./About-Me.html">About Me</a></li>
-            <li><a href="./Journey.html">My Journey</a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </div>
-        <div class="fbc mainText">
-       </div>
-         <div class="picdisplayflex">
-         <div class="picdisplay" >
-             <img src="./Image/Wedding.jpg" alt="">
-           <div class="text"> Wedding day</div> 
-         </div>
-         <div class="picdisplay">
-             <img src="./Image/BDTGrad.jpg" alt=" Military Ball">
-             <div class="text">Graduation Day from BCT.</div>  
-         </div>
-         <div class="picdisplay">
-             <img src="./Image/5ab912ad98b3b58b3f8b48c4.webp" alt="Biggs Airfield">
-             <div class="text">HH-60 BlackHawk Fort Bliss' Biggs Airfield. </div> 
-         </div>
-         <div class="picdisplay">
-            <img src="./Image/IMG_1922.jpg" alt="NATO Mission">
-            <div class="text">Posing with a cup of coffee and a German Weasel tank.</div>
-        </div>
+  <ul class="fbc mainText">
+     
+    <li><a class="active" href="./Landing.html" target="_blank"><Menu>Home</Menu></a></li>
+ 
+    <li><a class="active" href="./About-Me.html" target="_blank"><Menu>About Me</Menu></a></li>
+  
+    
+   
+  </ul>
 
-         <div class="picdisplay">
-             <img src="./Image/FTRiley.jpg" alt=" Marshall Airfield">
-             <div class="text">The sun setting over Fort Riley Marshall Airfield. </div> 
-          </div>
-          <div class="fbc mainText">
-          <p>My journey to the I.T. field Is a bit strange. I was a full time mechanic in 2010 when I met my partner and we got married. Wanting a better life for us both we moved away from our home town to try and find our own way in life. We found that way by answering the call to service. In 2014 I graduated Basic Combat Training at Fort Jackson, SC. Moving on to my AIT (Advanced Individual Training) at Fort Eustice, VA. After completion of that course and earning my aviation wings I was stained at Fort Bliss, TX. I learned how to perform my duties, really be a solder, and what it meant to be a leader in my three years at Fort Bliss. I moved on to Germany where I was afforded the opportunity to see and do many things until the pandemic hit. Luckily this is where my interest in technology grew. During the lockdown I learned all that I could about PC handwear. After building my first PC I was hooked. I had to learn more. As my military career came to an end in 2021 I had set my sights on Certified Ethical Hacking. As interesting as I thought it was going to be once I finished the course I knew it just wasn’t for me. Upon this realization I began to look for alternate routs in the IT world. I set my sights on software development, which lead me to the Vettec Skill Storm Java course. Now I'm here making my very own page. Look at me go! </p>
-          </div>
-          
-         </div>
-     </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      
+      <img src="./Image/Wedding.jpg" style="width:100%">
+      <div class="text"> Wedding day</div> 
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="./Image/BDTGrad.jpg" alt=" Military Ball"style="width:100%">
+      <div class="text">Graduation Day from BCT.</div>
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="./Image/5ab912ad98b3b58b3f8b48c4.webp" alt="Biggs Airfield"style="width:100%">
+      <div class="text">HH-60 BlackHawk Fort Bliss' Biggs Airfield. </div> 
+    </div>
+
+    <div class="mySlides fade">
+      
+      <img src="./Image/IMG_1922.jpg" alt="NATO Mission" style="width:100%">
+      <div class="text">Posing with a cup of coffee and a German Weasel tank.</div>
+    </div>
+
+    <div class="mySlides fade">
+      
+      <img src="./Image/FTRiley.jpg" alt=" Marshall Airfield"style="width:100%">
+      <div class="text">The sun setting over Fort Riley Marshall Airfield. </div> 
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      <div class="fbc mainText">
+        <p>My journey to the I.T. field Is a bit strange. I was a full time mechanic in 2010 when I met my partner and we got married. Wanting a better life for us both we moved away from our home town to try and find our own way in life. We found that way by answering the call to service. In 2014 I graduated Basic Combat Training at Fort Jackson, SC. Moving on to my AIT (Advanced Individual Training) at Fort Eustice, VA. After completion of that course and earning my aviation wings I was stained at Fort Bliss, TX. I learned how to perform my duties, really be a solder, and what it meant to be a leader in my three years at Fort Bliss. I moved on to Germany where I was afforded the opportunity to see and do many things until the pandemic hit. Luckily this is where my interest in technology grew. During the lockdown I learned all that I could about PC handwear. After building my first PC I was hooked. I had to learn more. As my military career came to an end in 2021 I had set my sights on Certified Ethical Hacking. As interesting as I thought it was going to be once I finished the course I knew it just wasn’t for me. Upon this realization I began to look for alternate routs in the IT world. I set my sights on software development, which lead me to the Vettec Skill Storm Java course. Now I'm here making my very own page. Look at me go! </p>
+        </div>
+   
+
+     
     
 </body>
 <footer class="fbc">
     
-    <a href="https://www.facebook.com/jason.jennings.5099"><img src="./Image/facebook_2015_logo.webp" alt="" class="buttonimg"> </a> 
-    <a href="https://www.facebook.com/jason.jennings.5099"><img src="./Image/indeedbutton.png" alt="" class="buttonimg"></a> 
+  <a href="https://www.facebook.com/jason.jennings.5099"><img src="./Image/facebook_2015_logo.webp" target="_blank" alt="Facebook Logo" class="buttonimg"> </a> 
+  <a href="https://www.facebook.com/jason.jennings.5099"><img src="./Image/indeedbutton.png" target="_blank" alt="Indeed Logo" class="buttonimg"></a> 
+  <a href="https://github.com/JwaitforitJ"><img src="./Image/github.png" target="_blank" alt="Github Logo" class="buttonimg"></a> 
 
 </footer>
 </html>
