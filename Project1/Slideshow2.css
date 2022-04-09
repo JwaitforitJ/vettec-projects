@@ -3,10 +3,10 @@ body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container */
+
 .slideshow-container {
   width: 600px;
- 
+ opacity: 90%;
   position: relative;
   margin: auto;
 }
@@ -46,7 +46,7 @@ img {vertical-align: middle;}
 }
 
 
-/* The dots/bullets/indicators */
+/* The dots */
 .dot {
   cursor: pointer;
   height: 15px;
