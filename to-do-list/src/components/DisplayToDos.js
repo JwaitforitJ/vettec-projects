@@ -37,13 +37,15 @@ const DisplayTodos = (props) => {
                       key={item.id}
                       item={item}
                       removeTodo={props.removeTodo}
+                      updateTodo={props.updateTodo}
                       completeTodo={props.completeTodo}
                     />
                   )
                 );
               })
             : null}
-            {props.todos.length > 0 && sort === "completed"
+          
+          {props.todos.length > 0 && sort === "completed"
             ? props.todos.map((item) => {
                 return (
                   item.completed === true && (
@@ -58,7 +60,8 @@ const DisplayTodos = (props) => {
                 );
               })
             : null}
-           {props.todos.length > 0 && sort === "all"
+         
+          {props.todos.length > 0 && sort === "all"
             ? props.todos.map((item) => {
                 return (
                   <TodoItem
@@ -71,10 +74,10 @@ const DisplayTodos = (props) => {
                 );
               })
             : null}
-             </ul>
+       
+      </ul>
     </div>
   );
-   
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DisplayTodos);

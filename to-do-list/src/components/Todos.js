@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
       addTodo: (obj) => dispatch(addTodos(obj)),
     };
   };
-
+  
   const Todos = (props) => {
     const [todo, setTodo] = useState("");
   
@@ -45,8 +45,8 @@ const mapStateToProps = (state) => {
             value={todo}
           />
 
-            <button className='add-btn' onClick={() => props.addTodo ({
-                item:todo,completed:false})}>
+            <button  className="add-btn"
+        onClick={() => add()}>
                 <GoPlus/></button>
             <br/>
 
