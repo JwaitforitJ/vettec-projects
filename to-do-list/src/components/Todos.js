@@ -49,9 +49,6 @@ const mapStateToProps = (state) => {
         onClick={() => add()}>
                 <GoPlus/></button>
             <br/>
-
-           
-
         </div>
    );
 }
