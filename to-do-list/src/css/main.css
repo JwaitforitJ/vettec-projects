@@ -30,7 +30,7 @@ body {
   text-align: center;
   margin-bottom: 2rem;
  color: white;
-  text-shadow: 10px -1px 7px #271c6c;
+  text-shadow: 10px -1px 7px #bfcc0c;
   font-size: 65px;
 }
 
@@ -44,38 +44,38 @@ body {
   width: 40vw;
   max-height: 2.5rem;
  
-  border: 2px solid #5d67fc;
+  border: 2px solid #8b913a;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   align-self: center;
   font-size: xx-large;
-  box-shadow: 2px 4px 10px #271c6c;
+  box-shadow: 2px 4px 10px yellow;
 }
 
 .todo-input:focus {
   outline: none;
-  border: 2px solid #5d67fc;
+  border: 2px solid #8b913a;
 }
 
 .add-btn {
   margin-left: 1rem;
  
-  color: #5d67fc;
+  color: #8b913a;
   border-radius: 50%;
-  border: 2px solid #d1d3f8;
+  border: 2px solid #8b913a;
   font-size: 1.5rem;
   width: 4rem;
   height: 4rem;
   cursor: pointer;
-  box-shadow: 2px 4px 10px #271c6c;
+  box-shadow: 2px 4px 10px yellow;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .add-btn:hover{
-  box-shadow: 7px 9px 15px #271c6c;
-  border: 3px solid #5d67fc;
+  box-shadow: 7px 9px 15px yellow;
+  border: 3px solid #8b913a;
 
 }
 
@@ -96,14 +96,14 @@ body {
   padding: 0.5rem 1.2rem;
   border-radius: 25px;
   cursor: pointer;
-  border: 2px solid #5d67fc;
+  border: 2px solid #8b913a;
   font-size: x-large;
-  box-shadow: 2px 4px 10px #271c6c;
+  box-shadow: 2px 4px 10px yellow;
  
 }
 
 .displaytodos .buttons button:hover{
-  box-shadow: 7px 9px 15px #271c6c;
+  box-shadow: 7px 9px 15px yellow;
   border: 3px solid #5d67fc;
 }
 
