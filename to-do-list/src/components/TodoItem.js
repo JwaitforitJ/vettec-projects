@@ -8,8 +8,10 @@ const TodoItem = (props) => {
             <textarea defaultValue={item.item}/>
             <button onClick={() => completeTodo(item.id)}>Completed</button>
             <button onClick={() => removeTodo(item.id)} >Delete</button>
+            
           </div>
           {item.completed && <span className="completed">Completed</span>}
+          
         </li>
     )
 }

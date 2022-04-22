@@ -14,6 +14,7 @@ html {
 body {
   background-image: url(https://www.milwaukeemag.com/wp-content/uploads/2021/07/GettyImages-1298291139.jpg);
   background-color: #cccccc;
+  
  
  
 }
@@ -72,6 +73,12 @@ body {
   align-items: center;
 }
 
+.add-btn:hover{
+  box-shadow: 7px 9px 15px #271c6c;
+  border: 3px solid #5d67fc;
+
+}
+
 
 .displaytodos {
   margin-top: 1rem;
@@ -95,6 +102,11 @@ body {
  
 }
 
+.displaytodos .buttons button:hover{
+  box-shadow: 7px 9px 15px #271c6c;
+  border: 3px solid #5d67fc;
+}
+
 .displaytodos .buttons button:not(:last-child) {
   margin-right: 1.5rem;
 }
@@ -110,23 +122,26 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  background: rgb(180, 182, 218);
+  background: white;
   margin: 0 1rem 1rem 0;
   height: 8rem;
   width: 18rem;
   border-radius: 0.5rem;
   padding: 1rem;
   position: relative;
+  box-shadow: 3px 4px 10px #271c6c;
+  
 }
 
 .card textarea {
   padding: 0.5rem;
   border-radius: 8px;
   border: none;
-  background: rgb(180, 182, 218);
+  background:white;
   color: #271c6c;
   height: 70%;
   font-size: 20px;
+  
 }
 
 .card textarea:disabled {
@@ -165,6 +180,17 @@ body {
   padding: 0.3rem 1rem;
   border-radius: 20px;
 }
+.container{
+  display: flex;
+  justify-content:right;
+  align-items:baseline;
+  height: 25vh;
+}
+label{
+  font-size: 15px;
+  font-weight:100;
+  font-family:cursive;
+}
 
 @media Screen and (max-width: 640px) {
   .displaytodos {
@@ -181,4 +207,5 @@ body {
   .card {
     margin-right: 0;
   }
+ 
 }

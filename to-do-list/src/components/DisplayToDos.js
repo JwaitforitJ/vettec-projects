@@ -37,7 +37,7 @@ const DisplayTodos = (props) => {
                       key={item.id}
                       item={item}
                       removeTodo={props.removeTodo}
-                      updateTodo={props.updateTodo}
+                      
                       completeTodo={props.completeTodo}
                     />
                   )
@@ -53,7 +53,7 @@ const DisplayTodos = (props) => {
                       key={item.id}
                       item={item}
                       removeTodo={props.removeTodo}
-                      updateTodo={props.updateTodo}
+                      
                       completeTodo={props.completeTodo}
                     />
                   )
@@ -68,7 +68,7 @@ const DisplayTodos = (props) => {
                     key={item.id}
                     item={item}
                     removeTodo={props.removeTodo}
-                    updateTodo={props.updateTodo}
+                    
                     completeTodo={props.completeTodo}
                   />
                 );
